@@ -1,10 +1,129 @@
 body {
-background-color: blanchedalmond;
-
+    background-color: #ffffff;
+    padding-bottom: 5em;
 }
 
-.header {
-    background-color: white;
-    margin: auto;
+.topContainer {
+    background-color:#ffffff;
+    width: 100%;
+}
+
+.logoWrapper {
+    padding-top: 1em;
+    padding-left: 4rem;
+    font-size: 20px;
+}
+.userWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    margin-left: auto;
+    justify-items: center;
+    width: 30rem;
+    padding-right: 10em;
+    padding-bottom: 1em;
+    font-size: 20px;
+    color: #626262;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.userWrapperBtn {
+    background:linear-gradient(to bottom, #61ace6 5%, #d5d6c7 100%);
+	background-color:#61ace6;
+	border-radius:42px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:15px;
+	font-style:italic;
+	padding:4px 19px;
+	text-decoration:none;
+	text-shadow:0px -2px 2px #283966;
+}
+
+.userWrapperBtn:hover {
+    background:linear-gradient(to bottom, #d5d6c7 5%, #61ace6 100%);
+	background-color:#d5d6c7;
+}
+
+.userWrapperBtn:active {
+    position:relative;
+	top:1px;
+}
+
+.photoContainer img{
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+.photoContainer h2 {
+    position: absolute;
+    text-align: center;
+    font-size: 85px; 
+    font-family: Snell Roundhand, cursive;
+    top: 200px; 
+    left: 0; 
+    width: 100%; 
+}
+
+.briefSpanText p span{
+    display: block;
+    font-size: 40px;
+
+    color: #626262;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.formContainer {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     text-align: center;
 }
+
+.form-control {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    margin-bottom: 10px;
+    
+}
+
+#submitButton{
+    background:linear-gradient(to bottom, #61ace6 5%, #d5d6c7 100%);
+	background-color:#61ace6;
+	border-radius:42px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:20px;
+	font-style:italic;
+    padding:15px 30px;
+	text-decoration:none;
+	text-shadow:0px -2px 2px #3964d1;
+}
+
+#submitButton:hover {
+    background:linear-gradient(to bottom, #d5d6c7 5%, #61ace6 100%);
+	background-color:#d5d6c7;
+}
+
+#submitButton:active {
+    position:relative;
+	top:1px;
+}
+
+
+
+
+
