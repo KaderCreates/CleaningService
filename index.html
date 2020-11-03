@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link href="/style.css" rel="stylesheet" type="text/css" >
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
     <title>Development</title>
 </head>
 
@@ -23,7 +24,7 @@
             <button class="userWrapperBtn">About</button>
         </div>
     </div>
-
+    
     <div class="photoContainer">
         <img src="./images/luke-richardson-nZyvgsb6Tb4-unsplash_Fotor.jpg" alt="error">
         <h2>Relax. We'll take it from here.</h2>
@@ -35,46 +36,46 @@
             <span style="font-size: 32px; font-family: Lato, sans-serif;"> Or Fill Out A Form Below</span>
         </p>
     </div>
-
+    
     <div class="formContainer">
-        <form action="" method="POST">
+        <form id="contact-form" method="POST" action="send" enctype="multipart/form-data">
             <div class="form-group">
-              <label for="firstName">First name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="First name">
+                <label for="firstName">First name</label>
+                <input name="firstName" type="text" class="form-control" id="firstName" placeholder="First name" required>
             </div>
             <div class="form-group">
-              <label for="lastName">Last name</label>
-              <input type="text" class="form-control" id="LastName" placeholder="Last name">
+                <label for="lastName">Last name</label>
+                <input name="lastName" type="text" class="form-control" id="lastName" placeholder="Last name" required>
             </div>
             <div class="form-group">
-              <label for="emailAddress">Email address</label>
-              <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com">
+                <label for="emailAddress">Email address</label>
+                <input name="emailAddress" type="email" class="form-control" id="email" placeholder="name@example.com" required>
             </div>
             <div class="form-group">
-              <label for="phone">Phone number</label>
-              <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone number" >
+                <label for="phone">Phone number</label>
+                <input name="phoneNumber" type="tel" class="form-control" id="phoneNumber" placeholder="Phone number"required >
             </div>
             <div class="form-group">
-              <label for="address">Address</label>
-              <input type="text" class="form-control" id="adddressLine1" placeholder="Line 1" >
-              <input type="text" class="form-control" id="addressLine2" placeholder="Line 2 " >
-              <input type="text" class="form-control" id="addressCity" placeholder="City" >
-              <input type="text" class="form-control" id="addressState" placeholder="State" >
-              <input type="text" class="form-control" id="addressZip" placeholder="Zip code" >
-              <input type="text" class="form-control" id="addressCountry" placeholder="Country" >
+                <label for="address">Address</label>
+                <input name="addressLine1" type="text" class="form-control" id="addressLine1" placeholder="Line 1" required>
+                <input name="addressLine2" type="text" class="form-control" id="addressLine2" placeholder="Line 2 " >
+                <input name="addressCity" type="text" class="form-control" id="addressCity" placeholder="City" required>
+                <input name="addressState" type="text" class="form-control" id="addressState" placeholder="State" required>
+                <input name="addressZip" type="text" class="form-control" id="addressZip" placeholder="Zip code" required>
+                <input name="addressCountry" type="text" class="form-control" id="addressCountry" placeholder="Country" required>
             </div>
             <div class="form-group">
                 <label for="comment">Comment</label>
-                <textarea class="form-control" id="comment" rows="5"></textarea>
-              </div>
-
-              <button type="submit" id="submitButton">Submit</button>
-            </form>
+                <textarea name="message" type="text" class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" value="submit" id="dummy" >dummy</button>
+            <!-- <button type="button" id="submitButton" onclick="btnSubmit()">Submit</button> -->
+        </form>
     </div>
-
-
-
-
+    
+    
+    
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -84,6 +85,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+        <script src="/contact.js"></script>
+
 </body>
 
 </html>
